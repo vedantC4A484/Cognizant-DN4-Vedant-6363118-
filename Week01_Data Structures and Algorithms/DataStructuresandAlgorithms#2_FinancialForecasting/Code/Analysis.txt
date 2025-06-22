@@ -1,0 +1,33 @@
+=>>What is Recursion?
+Recursion is a technique where a function calls itself to solve a problem by breaking it into smaller, similar subproblems.
+It generally has:
+A base case (to stop recursion)
+
+A recursive case (where the function calls itself)
+
+=>>Why use recursion?
+Recursion can simplify problems like:
+
+Mathematical calculations (factorial, Fibonacci)
+
+Tree/graph traversal
+
+Repetitive compound interest/growth predictions
+
+In this case, we can use recursion to project future financial values based on past growth rates.
+
+Analysis of Time Complexity:
+
+Recursive Depth: O(n) where n is the number of years
+
+Each recursive call does one multiplication ? O(n) total time
+
+Stack memory usage is also O(n) due to recursive call chain
+
+Optimization:
+To avoid excessive stack depth or recomputation we can use an Iterative Version as defined in Forecast.cs.
+
+Conclusion:
+Recursion makes logic clean but may be inefficient for large n.
+Thus we should use iteration or memoization for performance-critical or deep scenarios.
+Recursive growth model is great for projecting future investments or revenue trends

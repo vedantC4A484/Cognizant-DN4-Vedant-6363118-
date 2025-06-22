@@ -1,0 +1,26 @@
+=>>What is Big O Notation?
+Big O notation describes how an algorithm's runtime or space requirement grows relative to the input size n. 
+It focuses on the upper bound of growth, ignoring constants and less significant terms. 
+It is used to evaluate algorithm efficiency in terms of scalability and performance.
+
+Best, Average and Worst Case Complexities:
+| Algorithm     | Best Case           | Average Case  | Worst Case       |
+| ------------- | ------------------- | ------------- | ---------------- |
+| Linear Search | O(1) (first match)  | O(n/2) ? O(n) | O(n) (last item) |
+| Binary Search | O(1) (middle match) | O(log n)      | O(log n)         |
+
+
+Analysis of Time Complexity for Current Scenario:
+| Algorithm     | Time Complexity | Sort Required? |
+| ------------- | --------------- | -------------- |
+| Linear Search | O(n)            | No             |
+| Binary Search | O(log n)        | Yes (sorted)   |
+
+Linear Search is simple and requires no preprocessing.
+
+Binary Search is significantly faster (logarithmic time) but only works on sorted arrays.
+
+Conclusion:
+For large, frequently searched product datasets (as in e-commerce)
+we should use Binary Search with a sorted collection (or better, use built-in structures like Dictionary, HashSet, 
+or database indexes).
